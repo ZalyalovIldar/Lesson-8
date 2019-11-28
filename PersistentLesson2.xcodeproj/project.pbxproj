@@ -14,6 +14,11 @@
 		7C754AA9238EA9FB008CAF9D /* PersistentLesson2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C754AA7238EA9FB008CAF9D /* PersistentLesson2.xcdatamodeld */; };
 		7C754AAB238EA9FC008CAF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C754AAA238EA9FC008CAF9D /* Assets.xcassets */; };
 		7C754AAE238EA9FC008CAF9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C754AAC238EA9FC008CAF9D /* LaunchScreen.storyboard */; };
+		7C754AB9238EAEB0008CAF9D /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C754AB5238EAEB0008CAF9D /* User+CoreDataClass.swift */; };
+		7C754ABA238EAEB0008CAF9D /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C754AB6238EAEB0008CAF9D /* User+CoreDataProperties.swift */; };
+		7C754ABB238EAEB0008CAF9D /* Company+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C754AB7238EAEB0008CAF9D /* Company+CoreDataClass.swift */; };
+		7C754ABC238EAEB0008CAF9D /* Company+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C754AB8238EAEB0008CAF9D /* Company+CoreDataProperties.swift */; };
+		7C754ABF238EB09E008CAF9D /* DataStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C754ABE238EB09E008CAF9D /* DataStoreManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		7C754AAA238EA9FC008CAF9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C754AAD238EA9FC008CAF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C754AAF238EA9FC008CAF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C754AB5238EAEB0008CAF9D /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7C754AB6238EAEB0008CAF9D /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7C754AB7238EAEB0008CAF9D /* Company+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7C754AB8238EAEB0008CAF9D /* Company+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7C754ABE238EB09E008CAF9D /* DataStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +68,9 @@
 		7C754A9D238EA9FB008CAF9D /* PersistentLesson2 */ = {
 			isa = PBXGroup;
 			children = (
+				7C754ABD238EAEBB008CAF9D /* Models */,
 				7C754A9E238EA9FB008CAF9D /* AppDelegate.swift */,
+				7C754ABE238EB09E008CAF9D /* DataStoreManager.swift */,
 				7C754AA0238EA9FB008CAF9D /* SceneDelegate.swift */,
 				7C754AA2238EA9FB008CAF9D /* ViewController.swift */,
 				7C754AA4238EA9FB008CAF9D /* Main.storyboard */,
@@ -68,6 +80,17 @@
 				7C754AA7238EA9FB008CAF9D /* PersistentLesson2.xcdatamodeld */,
 			);
 			path = PersistentLesson2;
+			sourceTree = "<group>";
+		};
+		7C754ABD238EAEBB008CAF9D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C754AB5238EAEB0008CAF9D /* User+CoreDataClass.swift */,
+				7C754AB6238EAEB0008CAF9D /* User+CoreDataProperties.swift */,
+				7C754AB7238EAEB0008CAF9D /* Company+CoreDataClass.swift */,
+				7C754AB8238EAEB0008CAF9D /* Company+CoreDataProperties.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +166,13 @@
 			files = (
 				7C754AA3238EA9FB008CAF9D /* ViewController.swift in Sources */,
 				7C754AA9238EA9FB008CAF9D /* PersistentLesson2.xcdatamodeld in Sources */,
+				7C754ABC238EAEB0008CAF9D /* Company+CoreDataProperties.swift in Sources */,
+				7C754ABA238EAEB0008CAF9D /* User+CoreDataProperties.swift in Sources */,
 				7C754A9F238EA9FB008CAF9D /* AppDelegate.swift in Sources */,
 				7C754AA1238EA9FB008CAF9D /* SceneDelegate.swift in Sources */,
+				7C754ABB238EAEB0008CAF9D /* Company+CoreDataClass.swift in Sources */,
+				7C754AB9238EAEB0008CAF9D /* User+CoreDataClass.swift in Sources */,
+				7C754ABF238EB09E008CAF9D /* DataStoreManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
