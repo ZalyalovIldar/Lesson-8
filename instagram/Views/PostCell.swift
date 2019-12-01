@@ -44,9 +44,10 @@ class PostCell: UITableViewCell {
         let mainActionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let deleteAction = UIAlertAction(title: "Delete", style: .destructive) { _ in
             
-            LocalDataManager.shared.asyncDeletePost(with: self.postModel.id) {
-                self.postCellDelegate.reloadData()
-            }
+            guard let postToDelete = self.postModel else { return }
+            
+            LocalDataManager.shared.syncDeletePost(with: postToDelete.id.uuidString)
+            self.postCellDelegate.reloadData()
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         mainActionSheet.addAction(deleteAction)

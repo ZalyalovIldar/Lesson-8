@@ -89,10 +89,13 @@ extension PostsViewController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
         
+        let oldPosts = posts
+        
         guard let searchText = searchController.searchBar.text else { return }
         
         guard !searchText.isEmpty else {
-            fetchData()
+            posts = oldPosts
+            tableView.reloadData()
             return
         }
 

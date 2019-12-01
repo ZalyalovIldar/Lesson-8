@@ -1,5 +1,9 @@
 import UIKit
 
+enum UserDefaultKeys {
+    static let isFirstLaunch = "isFirstLaunch"
+}
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -9,7 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let isNotFirstLaunch = UserDefaults.standard.bool(forKey: UserDefaultKeys.isFirstLaunch)
         if !isNotFirstLaunch {
             let posts = Generator.getData()
-            LocalDataManager.shared.setAllPosts(for: posts)
+            LocalDataManager.shared.savePosts(postModels: posts)
             UserDefaults.standard.set(true, forKey: UserDefaultKeys.isFirstLaunch)
         }
         

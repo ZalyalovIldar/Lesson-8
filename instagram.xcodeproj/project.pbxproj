@@ -16,6 +16,9 @@
 		42925517236201A4009667EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42925515236201A4009667EA /* Main.storyboard */; };
 		42925519236201A5009667EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42925518236201A5009667EA /* Assets.xcassets */; };
 		4292551C236201A5009667EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4292551A236201A5009667EA /* LaunchScreen.storyboard */; };
+		42AB6F8E2392DF0F00207A3B /* instagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6F8C2392DF0F00207A3B /* instagram.xcdatamodeld */; };
+		42AB6F912392E0EE00207A3B /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6F8F2392E0EE00207A3B /* Post+CoreDataClass.swift */; };
+		42AB6F922392E0EE00207A3B /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6F902392E0EE00207A3B /* Post+CoreDataProperties.swift */; };
 		42C99DE423719BDA00E2C620 /* DataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C99DE323719BDA00E2C620 /* DataManagerProtocol.swift */; };
 		42C99DE72371A0C000E2C620 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C99DE62371A0C000E2C620 /* PostModel.swift */; };
 		42C99DEA2371A1FE00E2C620 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C99DE92371A1FE00E2C620 /* Generator.swift */; };
@@ -37,6 +40,9 @@
 		42925518236201A5009667EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4292551B236201A5009667EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4292551D236201A5009667EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42AB6F8D2392DF0F00207A3B /* instagram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = instagram.xcdatamodel; sourceTree = "<group>"; };
+		42AB6F8F2392E0EE00207A3B /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		42AB6F902392E0EE00207A3B /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		42C99DE323719BDA00E2C620 /* DataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerProtocol.swift; sourceTree = "<group>"; };
 		42C99DE62371A0C000E2C620 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		42C99DE92371A1FE00E2C620 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
@@ -60,6 +66,8 @@
 		4204CF302364C2F2002908F5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				42AB6F8F2392E0EE00207A3B /* Post+CoreDataClass.swift */,
+				42AB6F902392E0EE00207A3B /* Post+CoreDataProperties.swift */,
 				42C99DE62371A0C000E2C620 /* PostModel.swift */,
 			);
 			path = Models;
@@ -96,6 +104,7 @@
 				4292551D236201A5009667EA /* Info.plist */,
 				4292550F236201A4009667EA /* AppDelegate.swift */,
 				42925511236201A4009667EA /* SceneDelegate.swift */,
+				42AB6F8C2392DF0F00207A3B /* instagram.xcdatamodeld */,
 			);
 			path = instagram;
 			sourceTree = "<group>";
@@ -222,11 +231,14 @@
 				42C99DE72371A0C000E2C620 /* PostModel.swift in Sources */,
 				42C99DE423719BDA00E2C620 /* DataManagerProtocol.swift in Sources */,
 				42ED8D0D23621B5B00CBC494 /* LocalDataManager.swift in Sources */,
+				42AB6F912392E0EE00207A3B /* Post+CoreDataClass.swift in Sources */,
 				42C99DEC2371FB9900E2C620 /* PostsViewController.swift in Sources */,
 				42925510236201A4009667EA /* AppDelegate.swift in Sources */,
 				42ED8D142362214C00CBC494 /* ImageCell.swift in Sources */,
 				42C99DEA2371A1FE00E2C620 /* Generator.swift in Sources */,
+				42AB6F8E2392DF0F00207A3B /* instagram.xcdatamodeld in Sources */,
 				421CE0D823732DE400145E50 /* PostCellDelegate.swift in Sources */,
+				42AB6F922392E0EE00207A3B /* Post+CoreDataProperties.swift in Sources */,
 				42156D742371FDBA000A1451 /* PostCell.swift in Sources */,
 				42925512236201A4009667EA /* SceneDelegate.swift in Sources */,
 			);
@@ -426,6 +438,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		42AB6F8C2392DF0F00207A3B /* instagram.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				42AB6F8D2392DF0F00207A3B /* instagram.xcdatamodel */,
+			);
+			currentVersion = 42AB6F8D2392DF0F00207A3B /* instagram.xcdatamodel */;
+			path = instagram.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 42925504236201A4009667EA /* Project object */;
 }

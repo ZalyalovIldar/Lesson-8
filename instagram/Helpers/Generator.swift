@@ -13,7 +13,6 @@ class Generator {
         for i in 1...6 {
             
             let post = PostModel()
-            post.id = "\(i)"
             post.nickName = userNickname
             post.userImage = userImage
             post.text = "Post #\(i)"
