@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Company" representedClassName=".Company" syncable="YES">
-        <attribute name="name" optional="YES" attributeType="String"/>
-        <relationship name="employee" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="company" inverseEntity="User"/>
-    </entity>
-    <entity name="User" representedClassName=".User" syncable="YES">
-        <attribute name="age" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="anyBool" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO"/>
-        <attribute name="isMain" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
-        <attribute name="name" attributeType="String"/>
-        <relationship name="company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="employee" inverseEntity="Company"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19A583" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Post" representedClassName="Post" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="text" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Company" positionX="-54" positionY="9" width="128" height="73"/>
-        <element name="User" positionX="-317.73046875" positionY="77.3828125" width="128" height="118"/>
+        <element name="Post" positionX="-63" positionY="-18" width="128" height="103"/>
     </elements>
 </model>
