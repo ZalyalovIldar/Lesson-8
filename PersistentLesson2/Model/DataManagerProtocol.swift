@@ -11,19 +11,19 @@ import Foundation
 //Data Manager protocol
 protocol DataManagerProtocol {
     
-// MARK: - Saving methods
+    // MARK: - Saving methods
     func syncSave(_ post: PostStructure) -> [PostStructure]
     func asyncSave(_ post: PostStructure, completion: @escaping ([PostStructure]) -> Void)
     
-// MARK: - Getting methods
+    // MARK: - Getting methods
     func syncGet() -> [PostStructure]
     func asyncGet(completion: @escaping ([PostStructure]) -> Void)
     
-// MARK: - Deleting methods
+    // MARK: - Deleting methods
     func syncDelete(_ post: PostStructure) -> [PostStructure]
     func asyncDelete(_ post: PostStructure, completion: @escaping ([PostStructure]) -> Void)
     
-// MARK: - Searching methods
+    // MARK: - Searching methods
     func syncSearch(_ searchQuery: String) -> [PostStructure]
     func asyncSearch(_ searchQuery: String, completion: @escaping ([PostStructure]) -> Void)
     
